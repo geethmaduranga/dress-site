@@ -1,6 +1,5 @@
-.navbar-brand main-header{
-  font-family: Oswald;
-  color:green;
+.container_fluid{
 
-
+  box-shadow: 1px 1px 7px #888888;
 }
+

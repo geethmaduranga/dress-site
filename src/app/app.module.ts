@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-
 import { ProfileComponent } from './profile/profile.component';
-
 import { UserDummyComponent } from './user-dummy/user-dummy.component';
+import { TopDummyComponent } from './top-dummy/top-dummy.component';
 
 
 @NgModule({
@@ -14,7 +13,8 @@ import { UserDummyComponent } from './user-dummy/user-dummy.component';
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    UserDummyComponent
+    UserDummyComponent,
+    TopDummyComponent
   ],
   imports: [
     BrowserModule
