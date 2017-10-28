@@ -1,4 +1,4 @@
-<div class="col-lg-3 card">
+<div class="col-lg-3 col-xs-12 card">
   <div class="card-block">
     <div class="form-group">
       <label for="exampleInputName">Name</label>
@@ -9,14 +9,19 @@
       <input type="relationship" class="form-control" id="exampleInputRelationship" placeholder="Enter relationship">
     </div>
     <div class="row">
-      <div class="col-lg-6">
-        <button type="button" class="btn btn-raised btn-primary btn-top-down">Top</button>
+      <div class="col-lg-6 col-xs-6 ">
+        <button type="button" class="btn btn-raised btn-primary btn-top-down" (click)="view='top-dummy'">Top</button>
       </div>
-      <div class="col-lg-6">
-        <button type="button" class="btn btn-raised btn-primary btn-top-down">Down</button>
+      <div class="col-lg-6 col-xs-6">
+        <button type="button" class="btn btn-raised btn-primary btn-top-down" (click)="view='down-dummy'">Down</button>
       </div>
     </div>
+    <div class="animated fadeIn" *ngIf="view=='top-dummy'">
+      <app-top-dummy></app-top-dummy>
+    </div>
 
+    <div class="animated fadeIn"  *ngIf="view=='down-dummy'">
+      this is down
+    </div>
   </div>
-
 </div>
