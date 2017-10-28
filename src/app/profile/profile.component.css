@@ -7,6 +7,17 @@ small {
   line-height: 1.428571429;
   color: #999;
 }
-img {
-  border-radius: 50%;
+.img-rounded {
+  border-radius: 50%!important;
 }
+
+.user-background{
+
+}
+
+@media screen and (max-width: 480px) {
+  .text-details {
+    text-align: center;
+  }
+}
+
